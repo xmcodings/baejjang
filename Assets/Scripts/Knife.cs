@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Knife : MonoBehaviour
 {
@@ -36,18 +38,18 @@ public class Knife : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, target.position, step);
 
         }
-        
-        if(fingerscript.ispressed && transform.position.y < -4.2)
+        if(fingerscript.ispressed && transform.position.y < -5.5)
         {
-            Debug.Log("gamever");
+
+            Debug.Log("game0ver");
+            SceneManager.LoadScene("gameOver", LoadSceneMode.Single);
+
         }
 
         if(!fingerscript.ispressed)
         {
             transform.position = originalPos;
         }
-
-
 
     }
 }
