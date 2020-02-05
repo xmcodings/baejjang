@@ -623,8 +623,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CircleRotate.cs" />
     <Compile Include="Assets\Scripts\FingerPress.cs" />
     <Compile Include="Assets\Scripts\Knife.cs" />
+    <Compile Include="Assets\Scripts\SceneInstruction.cs" />
+    <Compile Include="Assets\Scripts\SceneMainMenu.cs" />
+    <Compile Include="Assets\Scripts\SceneSwitchManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\QS\Abstract backgrounds\Documentation\Readme.txt" />
